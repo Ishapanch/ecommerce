@@ -1,0 +1,47 @@
+.banner-img{
+        position: absolute;
+        top: 0;
+}
+
+.banner-text{
+    position: absolute;
+    top: 70%;
+    padding: 0 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner-text h3{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.banner-text h6{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.banner-btn{
+    position: absolute;
+    top: 95%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap:30px
+}
+
+.banner-btn .btn-one a{
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid #fff;
+    background-color: transparent;
+    background: transparent;
+    color: #fff !important;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1em 25px;
+    width: auto;
+    min-width: 175px;
+}

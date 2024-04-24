@@ -1,0 +1,13 @@
+.megamenu-new{
+    position: relative !important;
+        position: absolute;
+        z-index: 1000;
+        inset: 0px auto auto 0px;
+        transform: translate(0px, 0px) !important;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+}
+
+.navbar-expand-lg .navbar-nav .megamenu .nav-link{
+    cursor: pointer;
+}

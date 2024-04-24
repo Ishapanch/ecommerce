@@ -10,32 +10,62 @@ import logo from '../assets/logo/logo.png' ;
 import flag from '../assets/logo/usa.png' ;
 import Form from 'react-bootstrap/Form';
 import { CiSearch , CiUser ,CiLocationOn ,CiShoppingCart , CiHeart  } from "react-icons/ci";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import Megamenu from './Megamenu';
+
+        
 
 export default function MainHeader() {
   const [isBestSellerVisible, setBestSellerVisible] = useState(false);
 
-  const handleMouseEnter = () => {
+  const mouseOverOne = () => {
     setBestSellerVisible(true);
   }
-  const handleMouseLeave = () => {
+  const mouseLeaveOne = () => {
     setBestSellerVisible(false);
   }
 
   const [isInspiration, setInspiration] = useState(false);
 
-  const handleMouseEnter2 = () => {
+  const mouseOverTwo = () => {
     setInspiration(true);
   }
-  const handleMouseLeave2 = () => {
+  const mouseLeaveTwo = () => {
     setInspiration(false);
   }
 
+  const [isDesignerVisible, setDesignerVisible] = useState(false);
+
+  const mouseOverThree = () => {
+    setDesignerVisible(true);
+  }
+  const mouseLeaveThree = () => {
+    setDesignerVisible(false);
+  }
+
+
+  const [isFreeVisible, setFreeVisible] = useState(false);
+
+  const mouseOverFour = () => {
+    setFreeVisible(true);
+  }
+  const mouseLeaveFour = () => {
+    setFreeVisible(false);
+  }
+
+  const [isWeddingVisible , setWeddingVisible] = useState(false)
+
+  const mouseOverFive = () =>{
+    setWeddingVisible(true);
+  }
+  const mouseLeaveFive = () =>{
+    setWeddingVisible(false);
+  }
+
+
   return (
     <>
+
+    <header className='header-menu'>
       <section className="bg-grey padding-10">
         <Container className="new">
           <div>
@@ -89,7 +119,7 @@ export default function MainHeader() {
         </Container>
       </section>
 
-      <section className="bg-white padding-10">
+      <section className="bg-hover padding-10">
         <Container className="new">
           <div>
             <Row className="align-items-center">
@@ -113,7 +143,7 @@ export default function MainHeader() {
                 </div>
               </Col>
 
-              <Col lg="2" className="align-items-center text-end offset-lg-1">
+              <Col lg="3" className="align-items-center text-end ">
                 <ListGroup className="top-bar-list-two align-items-center">
                   <ListGroupItem className="top-icon">
                     <CiUser />
@@ -133,48 +163,108 @@ export default function MainHeader() {
           </div>
         </Container>
       </section>
-      <section className="bg-white padding-10">
+      <section className="bg-hover padding-10">
         <Container className="new">
           <div>
             <Row className="justify-content-center">
               <Col lg="6" className="align-items-center text-center">
                 <ListGroup className="top-bar-list-two menu align-items-center">
                   <ListGroupItem className="top-text-sm">
-                    <a href="/" onMouseOver={handleMouseEnter} onMouseLeave={handleMouseLeave}>Best Sellers</a>
-                    {isBestSellerVisible && 
-                    <div className="dropdown-menu" id='best-seller'>
-                      <ul>
-                        <li>Menu 1</li>
-                        <li>Menu 2</li>
-                        <li>Menu 3</li>
-                      </ul>
-                    </div>
-                    }
+                    <a
+                      href="/"
+                      onMouseOver={mouseOverOne}
+                      onMouseLeave={mouseLeaveOne}
+                    >
+                      Best Sellers
+                    </a>
+                    {isBestSellerVisible && (
+                      <div className="dropdown-menu menu-one" id="best-seller">
+                        <ul>
+                          <li>Menu 1</li>
+                          <li>Menu 2</li>
+                          <li>Menu 3</li>
+                        </ul>
+                      </div>
+                    )}
                   </ListGroupItem>
                   <ListGroupItem className="top-text-sm">
-                    <a href="/" onMouseOver={handleMouseEnter2} onMouseLeave={handleMouseLeave2}>Inspiration</a>
+                    <a
+                      href="/"
+                      onMouseOver={mouseOverTwo}
+                      onMouseLeave={mouseLeaveTwo}
+                    >
+                      Inspiration
+                    </a>
 
-                    {isInspiration && 
-                    <div className="dropdown-menu" id='best-seller'>
-                      <ul>
-                        <li>Menu 21</li>
-                        <li>Menu 22</li>
-                        <li>Menu 32</li>
-                      </ul>
-                    </div>
-                    }
+                    {isInspiration && (
+                      <div className="dropdown-menu menu-one" id="best-seller">
+                        <ul>
+                          <li>Menu 21</li>
+                          <li>Menu 22</li>
+                          <li>Menu 32</li>
+                        </ul>
+                      </div>
+                    )}
                   </ListGroupItem>
 
                   <ListGroupItem className="top-text-sm">
-                    <a href="/">Designers</a>
+                    <a
+                      href="/"
+                      onMouseOver={mouseOverThree}
+                      onMouseLeave={mouseLeaveThree}
+                    >
+                      Designers
+                    </a>
+
+                    {isDesignerVisible && (
+                      <div className="dropdown-menu menu-one" id="best-seller">
+                        <ul>
+                          <li>Des 21</li>
+                          <li>Des 22</li>
+                          <li>Des 32</li>
+                        </ul>
+                      </div>
+                    )}
                   </ListGroupItem>
 
                   <ListGroupItem className="top-text-sm">
-                    <a href="/">Free Design Services</a>
+                    <a
+                      href="/"
+                      onMouseOver={mouseOverFour}
+                      onMouseLeave={mouseLeaveFour}
+                    >
+                      Free Design Services
+                    </a>
+
+                    {isFreeVisible && (
+                      <div className="dropdown-menu menu-one" id="best-seller">
+                        <ul>
+                          <li>Free 21</li>
+                          <li>Free 22</li>
+                          <li>Free 32</li>
+                        </ul>
+                      </div>
+                    )}
                   </ListGroupItem>
 
                   <ListGroupItem className="top-text-sm">
-                    <a href="/">Wedding Registry</a>
+                    <a
+                      href="/"
+                      onMouseOver={mouseOverFive}
+                      onMouseLeave={mouseLeaveFive}
+                    >
+                      Wedding Registry
+                    </a>
+
+                    {isWeddingVisible && (
+                      <div className="dropdown-menu menu-one" id="best-seller">
+                        <ul>
+                          <li>Free 21</li>
+                          <li>Free 22</li>
+                          <li>Free 32</li>
+                        </ul>
+                      </div>
+                    )}
                   </ListGroupItem>
                 </ListGroup>
               </Col>
@@ -182,6 +272,11 @@ export default function MainHeader() {
           </div>
         </Container>
       </section>
+
+      <Megamenu/>
+
+      <div className='opacity'></div>
+      </header>
     </>
   );
 }

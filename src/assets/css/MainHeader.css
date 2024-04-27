@@ -11,7 +11,9 @@
 
 .navbar-nav .nav-link.active {
     color: #fff !important;
+    font-size: 13px;
     transition: none;
+    text-transform: uppercase;
 }
 
 .header-menu:hover .navbar-nav .nav-link.active {
@@ -161,12 +163,13 @@ span.search-icon {
 }
 
 .top-text-sm {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: normal;
     line-height: normal;
     background-color: transparent !important;
     color: #fff;
-    height: 32px;
+    height: auto;
+    /* height: 32px; */
     align-content: center;
     letter-spacing: normal;
     padding: 0 10px !important;
@@ -176,20 +179,25 @@ span.search-icon {
     color: #000;
 }
 
-.top-bar-list-two.menu .list-group-item:not(:last-child):after {
-    content: "";
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-right: 1px solid #000;
+.header-menu:hover .top-bar-list-two.menu .list-group-item:not(:last-child):after {
+    border-right: 1px solid #000;   
+}
+
+.header-menu .top-bar-list-two.menu .list-group-item:not(:last-child):after{
+    border-right: 1px solid #fff;
     position: absolute;
     height: 100%;
     padding-left: 10px;
     width: 1px;
+    content: "";
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .top-text-sm a {
     text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .header-menu:hover .top-text-sm a {
@@ -215,7 +223,7 @@ span.search-icon {
     transition: all linear 0.3s;
     display: block !important;
     position: absolute;
-    top: 30px;
+    top: 18px;
 }
 
 .dropdown-menu.menu-one ul {

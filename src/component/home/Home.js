@@ -4,9 +4,9 @@ import Slider from './Slider'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <Slider/>
-    </div>
+    </>
   )
 }

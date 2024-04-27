@@ -15,8 +15,69 @@
   
   .custom-dot-list-style button{
   border: none;
-  background: rgb(255, 68, 68);
+  background: rgb(182, 181, 181);
+  position: relative;
+  height: 3px;
+  width: 40px;
+  border-radius: 2px;
+  margin-right: 20px;
   }
+  
   .react-multi-carousel-dot.react-multi-carousel-dot--active button{
-  background: rgb(255, 68, 68) !important;
+  background: #595959 !important;
   }
+
+ 
+
+  .padding-sec{
+    padding:50px 0;
+  }
+
+  .section-title h3{
+    margin: 10px 0;
+    font-size: 40px;
+    font-family: var(--font-heading);
+    text-align: center;
+    color: #242424;
+  }
+  .grey-sec{
+    background-color: #eee;
+
+  }
+
+  .react-multi-carousel-dot--active{
+    color: #595959;
+  }
+
+  .play-pause {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #595959;
+    position: relative;
+    left: 30%;
+    bottom: 25px;
+}
+  .play-pause svg{
+    position: relative;
+    top: -1px;
+    font-size: 12px;
+    color: #595959;
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right {
+  background: transparent;
+  bottom: -10px;
+}
+
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--right::before {
+  color: #242424;
+  right: 30vw;
+  position: relative;
+}
+.react-multiple-carousel__arrow.react-multiple-carousel__arrow--left::before{
+  color:#242424 ;
+  left: 30vw;
+  position: relative;
+}

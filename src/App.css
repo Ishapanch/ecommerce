@@ -1,3 +1,21 @@
+@import url(https://db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display+Regular);
+
+@import url(https://db.onlinewebfonts.com/c/562fa31bba08b3f71cb71257ddb880d5?family=Verdana);
 .container.new{
   max-width: 1320px !important;
+}
+
+
+
+:root{
+  --font-heading: "GT-Sectra-Display-Regular" ;
+  --font-para:"Verdana" ;
+}
+
+h3 , h2 , h1 ,h4, h5, h6{
+  font-family: var(--font-heading);
+}
+
+p ,a {
+  font-family: var(--font-para);
 }

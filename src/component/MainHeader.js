@@ -180,7 +180,7 @@ export default function MainHeader() {
           <Container className="new">
             <div>
               <Row className="justify-content-center">
-                <Col lg="6" className="align-items-center text-center">
+                <Col lg="12" className="align-items-center text-center">
                   <ListGroup className="top-bar-list-two menu align-items-center">
                     <ListGroupItem
                       className="top-text-sm"

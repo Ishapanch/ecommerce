@@ -28,15 +28,19 @@ export default function Slider() {
   const sliderImageUrl = [
     {
       url: "https://cb2.scene7.com/is/image/CB2/032124_Art_Tile?wid=536&qlt=75",
+      name: "Art",
     },
     {
       url: "https://cb2.scene7.com/is/image/CB2/032124_Dining_Tile?wid=536&qlt=75",
+      name: "Dining Room"
     },
     {
       url: "https://cb2.scene7.com/is/image/CB2/032124_Living_Tile?wid=536&qlt=75",
+      name: "Living Room"
     },
     {
       url: "https://cb2.scene7.com/is/image/CB2/032124_Outdoor_Tile?wid=536&qlt=75",
+      name: "Outdoor"
     },
   ];
 
@@ -65,6 +69,7 @@ export default function Slider() {
             return (
               <div className="slider" key={index}>
                 <img src={imageUrl.url} alt="slider" />
+                <h6 className="slider-text">{imageUrl.name}</h6>
               </div>
             );
           })}

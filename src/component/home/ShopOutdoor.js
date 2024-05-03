@@ -18,7 +18,7 @@ export default function ShopOutdoor() {
     setLoop(!isLoop)
   }
   return (
-    <div>
+    <div className="outdoor-sec">
       <Container fluid>
         <Row className="justify-content-center">
           <Col lg={8} className="text-center">
@@ -33,16 +33,16 @@ export default function ShopOutdoor() {
                 <button onClick={pauseplay}>
                   {isAutoplay ? <FaPause /> : <FaPlay />}
                 </button>
-
-                <h3>SHOP OUTDOOR DECOR</h3>
               </div>
+              <h3>SHOP OUTDOOR DECOR</h3>
             </div>
           </Col>
           <Col lg={5} className='pr-0'>
             <div className="img-sec">
               <img src={img1} className='w-100'/>
+              <h3>SHOP OUTDOOR DINING</h3>
             </div>
-            <h3>SHOP OUTDOOR DINING</h3>
+          
           </Col>
         </Row>
       </Container>

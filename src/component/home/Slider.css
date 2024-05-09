@@ -1,7 +1,7 @@
 .slider {
     margin:0 20px;
-    overflow:"hidden";
-    padding:2rem 0;
+    overflow: hidden;
+    padding:  0;
   }
   
   .slider img {
@@ -32,13 +32,21 @@
   .padding-sec{
     padding:50px 0;
   }
-
+ .padding-sec-top{
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+ .padding-sec-bottom{
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
   .section-title h3{
     margin: 10px 0;
     font-size: 40px;
     font-family: var(--font-heading);
     text-align: center;
     color: #242424;
+    padding-bottom: 40px;
   }
   .grey-sec{
     background-color: #eee;
@@ -87,5 +95,5 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 20px 15px 20px 0;
 }

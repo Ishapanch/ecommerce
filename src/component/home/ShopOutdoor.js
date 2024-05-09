@@ -37,7 +37,7 @@ export default function ShopOutdoor() {
               <h3>SHOP OUTDOOR DECOR</h3>
             </div>
           </Col>
-          <Col lg={5} className='pr-0'>
+          <Col lg={5} className='pr-0 align-content-center'>
             <div className="img-sec">
               <img src={img1} className='w-100'/>
               <h3>SHOP OUTDOOR DINING</h3>

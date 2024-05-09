@@ -7,7 +7,7 @@ import '../home/Limited.css'
 
 export default function Popular() {
   return (
-    <div className="bg-white padding-sec">
+    <div className="bg-white padding-sec-bottom">
       <Container>
         <Row className="justify-content-center">
           <Col lg={8} className="text-center">
@@ -24,7 +24,7 @@ export default function Popular() {
             </Row>
           </Col>
           <Col lg={12}>
-            <div className="padding-sec">
+            <div className="pt-5">
               <img src={top} className="w-100" />
             </div>
           </Col>

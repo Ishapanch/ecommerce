@@ -123,9 +123,9 @@ export default function MainHeader() {
         <section className="bg-hover padding-10">
           <Container className="new">
             <div>
-              <Row className="align-items-center">
+              <Row className="align-items-center padding-10">
                 <Col lg="3" className="align-items-center">
-                  <Form className="d-flex">
+                  <Form className="search-box">
                     <Form.Control
                       type="search"
                       placeholder="What can we help you find ?"

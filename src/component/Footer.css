@@ -1,0 +1,61 @@
+footer{
+    font-family: var(--font-para);
+}
+
+footer .footer-sec .footer-padding{
+    padding:0 20px;
+}
+
+footer .footer-sec .txt-icon-sec{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+
+}
+footer .footer-sec .txt-icon-sec .icon{
+   padding-right: 20px;
+}
+
+
+footer .footer-sec .txt-icon-sec .icon svg{
+    font-size: 13px;
+    stroke-width: 0;
+    width: 3rem;
+    height: 3rem;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+footer .footer-sec .txt-icon-sec .icon svg.stroke-1{
+    stroke-width: 1px;
+}
+footer .footer-sec .txt-icon-sec .text-icon h5{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-family: var(--font-para);
+}
+
+footer a{
+    font-size: 12px;
+    padding-right: 10px;
+    text-decoration: underline !important;
+}
+
+footer .content p {
+    font-size: 14px;
+}
+
+footer .content .links{
+    display: inline;
+}
+
+footer .content .links a{
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+footer .content .image .app-icon{
+    max-width: 50%;
+    cursor: pointer;
+}

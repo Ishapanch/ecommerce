@@ -43,7 +43,7 @@ footer a{
 }
 
 footer .content p {
-    font-size: 14px;
+    font-size: 12.5px;
 }
 
 footer .content .links{
@@ -58,4 +58,35 @@ footer .content .links a{
 footer .content .image .app-icon{
     max-width: 50%;
     cursor: pointer;
+}
+
+footer .list-footer{
+    padding: 10px 0;
+    list-style: none;
+}
+
+footer .list-footer li a{
+    font-size: 12px;
+    padding: 4px 0;
+    line-height: 24px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+footer .list-footer li:hover a{
+    text-decoration: underline !important;
+}
+
+footer .icons-social{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 70px;
+    align-items: start;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+footer .icons-social svg{
+    stroke-width: 1px;
+    font-size: 22px;
 }
